@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <title><%= SITE_NAME if SITE_NAME %> | <%= @page_title %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header" >
+			<link rel= "shortcut icon" href="/assets/sleuthicon.gif"/>
+		</div>
+		<div id="logo">
+		</div><!--endlogo-->
+			<div id="mainNav">
+				<%= render "/layouts/main_nav" %>
+			</div><!--endmainNav-->
+				<%= render "layouts/admin_nav" %>
+				<p style="color: green; margin-left:190px;"><%= flash[:notice] %></p>
+			<%= yield %>
+		<div id="footer">
+			Footer
+		</div><!--endfooter-->
+	</div><!--wrapper-->
+</body>
+</html>

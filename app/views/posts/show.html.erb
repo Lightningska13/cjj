@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @post.description %>
+</p>
+
+<p>
+  <b>Blurb:</b>
+  <%= @post.blurb %>
+</p>
+
+<p>
+  <b>Pic file name:</b>
+  <%= @post.pic_file_name %>
+</p>
+
+<p>
+  <b>Pic file size:</b>
+  <%= @post.pic_file_size %>
+</p>
+
+<p>
+  <b>Pic content type:</b>
+  <%= @post.pic_content_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
