@@ -24,17 +24,12 @@
     <%= f.text_area :blurb %>
   </div>
   <div class="field">
-    <%= f.label :pic_file_name %><br />
-    <%= f.text_field :pic_file_name %>
-  </div>
-  <div class="field">
-    <%= f.label :pic_file_size %><br />
-    <%= f.number_field :pic_file_size %>
-  </div>
-  <div class="field">
-    <%= f.label :pic_content_type %><br />
-    <%= f.text_field :pic_content_type %>
-  </div>
+		<%= image_tag @post.pic.url(:medium) %> <br />
+		<label class="instructions"><input type="checkbox" name="delete_image" value="1" /> Check to remove Picture 1</label>
+   <br />
+	</div>
+  <%= f.label :pic, "Picture" %>  
+  <%= f.file_field :pic %> <br /><br />
   <div class="actions">
     <%= f.submit %>
   </div>

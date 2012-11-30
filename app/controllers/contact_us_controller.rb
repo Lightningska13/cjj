@@ -12,7 +12,7 @@ class ContactUsController < ApplicationController
 
     if @contact_us.valid?
       ContactUsMailer.send_confirmation(@contact_us).deliver
-      flash[:notice] = 'Thank you. Your message has been sent.'
+      flash[:notice] = 'Your message has been sent. Thank you!'
       redirect_to :action  => :new
     else
       render :action => "new"

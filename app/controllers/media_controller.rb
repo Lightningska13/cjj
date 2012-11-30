@@ -3,7 +3,7 @@ class MediaController < ApplicationController
   # GET /media.json
   def index
     @media = Medium.all
-    @page_title = "Media"
+    @page_title = "CJs Media"
 
     respond_to do |format|
       format.html # index.html.erb

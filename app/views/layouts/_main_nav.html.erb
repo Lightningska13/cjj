@@ -1,5 +1,6 @@
-<%=section_link('Home',:controller => 'dash', :action => 'index') %>
-<%=section_link('Contact',:controller => 'contact_us', :action => 'new') %>
-<%=section_link('What Cathy Does',:controller => 'about', :action => 'index') %>
-<%=section_link('Where Cathys Been',:controller => 'posts', :action => 'index') %>
-<%=section_link('Media',:controller => 'media', :action => 'index') %>
+<%= link_to image_tag("cathyhome.gif"), "/"%>
+<%= link_to image_tag("cathycontact.gif"), "/contact_us/new"%>
+<%= link_to image_tag("cathycalendar.gif"), "/about/index"%>
+<%= link_to image_tag("cathyabout.gif"), "/about/index"%>
+<%= link_to image_tag("cathyblog.gif"), "/posts"%>
+<%= link_to image_tag("cathymedia.gif"), "/media"%>

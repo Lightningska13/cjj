@@ -10,11 +10,68 @@
  *
  *= require_self
  *= require_tree .
- */
 
+	Gray Color: 8e9196
+	Blue Color: 929baa
+	Peach Color: fac3a5
+	Circle Color: edf0f5
+ */
+body {
+	margin: auto;
+	padding: 0;
+	background: #edf0f5;
+}
 #wrapper {
 	width: 1000px;
 	margin: auto;
 	padding: 0;
-	border: 1px solid black;
+	background-color: #edf0f5;
+}
+#logo {
+	width: 1000px;
+	height: 364px;
+	background: url('/assets/cathybanner.gif');
+}
+#mainNav a img {
+	margin-right: -4.5px;
+}
+#mainNav:hover {
+	background: none;
+}
+#mainContent h1 {
+	opacity: .8;
+}
+#pageHeader {
+	padding-left: 10px;
+}
+#postListing {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#postListing h1 a {
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: none;
+}
+#mediaLeft {
+	float: left;
+	width: 460px;
+	padding-left: 10px;
+}
+#mediaRight {
+	width: 500px;
+	padding-left: 10px;
+	float: left;
+}
+fieldset {
+	width: 500px;
+	border: 1px solid #8e9196;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+.submit input {
+}
+#footer {
+	text-align: center;
 }

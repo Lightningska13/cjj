@@ -1,34 +1,8 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @post.name %></h1>
 
-<p>
-  <b>Name:</b>
-  <%= @post.name %>
-</p>
+<p><%= @post.description %></p>
 
-<p>
-  <b>Description:</b>
-  <%= @post.description %>
-</p>
-
-<p>
-  <b>Blurb:</b>
-  <%= @post.blurb %>
-</p>
-
-<p>
-  <b>Pic file name:</b>
-  <%= @post.pic_file_name %>
-</p>
-
-<p>
-  <b>Pic file size:</b>
-  <%= @post.pic_file_size %>
-</p>
-
-<p>
-  <b>Pic content type:</b>
-  <%= @post.pic_content_type %>
-</p>
+<p><%= @post.blurb %></p>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
