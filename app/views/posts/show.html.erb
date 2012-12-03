@@ -1,9 +1,11 @@
 <div id="contentBox">
-	<h1><%= @post.name %></h1>
-		<p style="font-style: italic;"><%= @post.blurb %></p>
-		<p style="float: right; width: 500px;"><%= @post.description %></p>
-	<%= image_tag(@post.pic.url(:large)) if @post.pic_file_name.present? %>
+	<% if admin? %>
+		<div class="login">
+			<%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %>
+		</div>
+	<% end %>
+		<h1><%= @post.name %></h1>
+			<p style="font-style: italic;"><%= @post.blurb %></p>
+			<p style="float: right; width: 500px;"><%= @post.description %></p>
+		<%= image_tag(@post.pic.url(:large)) if @post.pic_file_name.present? %>
 </div>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>

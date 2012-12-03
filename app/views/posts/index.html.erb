@@ -1,6 +1,2 @@
 <div id="pageHeader"><%= image_tag("/assets/bloghead.gif") %></div>
-<p style="float: right;"><% if admin? %>
-	<%= link_to 'New Post', new_post_path, :class => 'admin' %>
-	<% end %>
-</p>
-<%= render "posts/post_list" %>
+	<%= render "posts/post_list" %>

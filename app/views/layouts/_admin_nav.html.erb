@@ -1,3 +1,7 @@
-
-
-
+<% if admin? %>
+	<div class="login">
+		<%=section_link('New Blog Post',:controller => 'posts', :action => 'new') %>
+		<%= link_to 'Logout', logout_path %>	
+		<span><%= current_user.name %> logged in</span>
+	</div>
+<% end %>

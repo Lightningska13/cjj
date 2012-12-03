@@ -1,3 +1,4 @@
+<div id="contentBox">
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -10,22 +11,22 @@
       </ul>
     </div>
   <% end %>
-
+<h1>New post</h1>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :blurb %><br />
+    <%= f.text_field :blurb %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :blurb %><br />
-    <%= f.text_area :blurb %>
-  </div>
-  <div class="field">
 		<%= image_tag @post.pic.url(:medium) %> <br />
-		<label class="instructions"><input type="checkbox" name="delete_image" value="1" /> Check to remove Picture 1</label>
+		<label class="instructions"><input type="checkbox" name="delete_image" value="1" /> Click checkbox to remove image</label>
    <br />
 	</div>
   <%= f.label :pic, "Picture" %>  
@@ -34,3 +35,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
