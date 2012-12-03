@@ -1,16 +1,19 @@
 <div id="pageHeader">
 	<%= image_tag("/assets/mediahead.gif") %>
 </div>
-<div id="mediaLeft">
-<p>These images are available to download for use in marketing:</p>
-<%= image_tag("/assets/cj.green.leaves200.gif") %> 
-<%= link_to "Full Size", "/assets/cj.green.leaves.jpg" %> | <%= link_to "Download", "/assets/cj.green.leaves.pdf" %>
-<%= image_tag("/assets/cj.green.standing200.gif") %> 
-<%= link_to "Full Size", "/assets/cj.green.standing.jpg" %> | <%= link_to "Download", "/assets/cj.green.standing.pdf" %>
+<div id="contentBox">
+	<h1>Images</h1>
+		<p>These images are available to download for use in marketing:</p>
+			<%= image_tag("/assets/cj.green.leaves400.gif") %>
+			<%= image_tag("/assets/cj.green.standing400.gif") %><br />
+	<div id="mediaImages"><%= link_to "Full Size", "/assets/cj.green.leaves.jpg" %> | <%= link_to "Download", "/assets/cj.green.leaves.pdf" %>
+	</div>
+	<div id="mediaImages"><%= link_to "Full Size", "/assets/cj.green.standing.jpg" %> | <%= link_to "Download", "/assets/cj.green.standing.pdf" %>
+	</div>
 </div>
-<div id="mediaRight">
-	<p>The Day Frog Swallowed The Ocean</p>
-	<iframe width="425" height="349" src="http://www.youtube.com/embed/7CzWkvIr8Hw" frameborder="0" allowfullscreen></iframe>
-	<p>The Turnip</p>
-	<iframe width="425" height="349" src="http://www.youtube.com/embed/z9OzMIjfl0w" frameborder="0" allowfullscreen></iframe>
+<div id="contentBox">
+	<p>The Day Frog Swallowed The Ocean (Children)</p>
+	<iframe width="400" height="349" src="http://www.youtube.com/embed/7CzWkvIr8Hw" frameborder="0" allowfullscreen></iframe>
+	<p>Snow White And Rose Red (Adults)</p>
+	<iframe width="400" height="349" src="http://www.youtube.com/embed/_UT7dHznoro" frameborder="0" allowfullscreen></iframe>
 </div>

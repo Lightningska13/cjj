@@ -1,9 +1,11 @@
 <div id="pageHeader"><%= image_tag("/assets/homehead.gif") %></div>
+<div id="contentBox">
 <% @posts.each do |post| %>
 	<div id="postListing">
     	<h1><%= link_to post.name, post %></h1>
-			<p><%= post.blurb %></p>
+			<p style="font-style: italic;"><%= post.blurb %></p>
     		<p style="float: right; width: 500px;"><%= post.description %></p>
 		<%= image_tag(post.pic.url(:large)) if post.pic_file_name.present? %>
 	</div>
 <% end %>
+</div>

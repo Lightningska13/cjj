@@ -19,7 +19,9 @@
 body {
 	margin: auto;
 	padding: 0;
-	background: #edf0f5;
+	background: #8e9196;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8e9196;
 }
 #wrapper {
 	width: 1000px;
@@ -44,24 +46,31 @@ body {
 #pageHeader {
 	padding-left: 10px;
 }
-#postListing {
+#contentBox {
+	width: 970px;
+	margin: auto;
+	padding-bottom: 10px;
 	padding-left: 10px;
-	padding-right: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #fac3a5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 7px 7px 8px rgba(254, 194, 166, 0.5);
+	-moz-box-shadow: 7px 7px 8px rgba(254, 194, 166, 0.5);
+	box-shadow: 7px 7px 8px rgba(254, 194, 166, 0.5);
 }
-#postListing h1 a {
+#contentBox h1 a {
 	font-weight: normal;
-	font-style: italic;
 	text-decoration: none;
+	color: #8e9196;
 }
-#mediaLeft {
+#mediaImages {
+	padding-left: 250px;
 	float: left;
-	width: 460px;
-	padding-left: 10px;
 }
-#mediaRight {
-	width: 500px;
-	padding-left: 10px;
-	float: left;
+#mediaImages a {
+	color: #8e9196;
 }
 fieldset {
 	width: 500px;
