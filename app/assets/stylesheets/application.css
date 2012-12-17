@@ -40,6 +40,7 @@ body {
 }
 #mainNav a img {
 	margin-right: -4.5px;
+	border: none;
 }
 #mainNav:hover {
 	background: none;
