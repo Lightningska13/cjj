@@ -157,9 +157,18 @@ iframe {
 	margin-left: 20px;
 }
 #footer {
+	background: #8e9196;
 	text-align: center;
 	border: 1px 1px 1px 0px solid #929baa;
 	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+#footer p {
+	color: #edf0f5;
+	margin-bottom: 5px;
+}
+#footer a {
+	font-size: x-small;
+	color: #edf0f5;
 }

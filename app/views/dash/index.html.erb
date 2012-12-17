@@ -3,7 +3,7 @@
 	<div id="contentBox">
     	<h1><%= link_to post.name, post %></h1>
 			<p style="font-style: italic; margin-top: -15px;"><%= post.blurb %></p>
-    		<div id="contentDescription"><%= post.description %></div>
+    		<div id="contentDescription"><%== post.description %></div>
 		<%= image_tag(post.pic.url(:large)) if post.pic_file_name.present? %>
 	</div>	
 <% end %>
