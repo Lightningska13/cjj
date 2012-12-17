@@ -15,7 +15,6 @@ Cjj::Application.routes.draw do
 
   	match 'new_contact' =>  'contact_us#new', :conditions => { :method => :get }
   	resources :contact_us, :only => [:new, :create]
-  	match 'contact_us' => 'contact_us#new'
 	  
   # The priority is based upon order of creation:
   # first created -> highest priority.
