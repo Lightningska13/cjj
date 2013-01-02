@@ -26,6 +26,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'aws-sdk'
 gem 'authlogic' 
 gem 'paperclip', "~>2.7"
 gem 'ckeditor', "3.7.3"

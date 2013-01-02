@@ -2,7 +2,7 @@
 	<% if admin? %>
 		<div class="login">
 			<% if admin? %>
-			<%= link_to 'Delete', @post, :confirm => "Are you sure?", :method => :delete,  :class => 'admin' %> | <% end%><%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %>
+			<%= link_to 'Delete', @post, :confirm => "Are you sure?", :method => :delete, :class => 'admin' %> | <% end%><%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %>
 		</div>
 	<% end %>
 	<h1><%= @post.name %></h1>
